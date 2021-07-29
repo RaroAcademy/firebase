@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1020218966358",
+    "project_id": "budget-raroacademy",
+    "storage_bucket": "budget-raroacademy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020218966358:android:a898f5906356340d3896f7",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020218966358-b5lhci4bgdjl1ukssg0so44ahkhptdmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0ModLee4MIwj55ogpY3wlUkohvWzCrfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020218966358-b5lhci4bgdjl1ukssg0so44ahkhptdmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
