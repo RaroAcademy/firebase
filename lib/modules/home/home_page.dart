@@ -33,7 +33,8 @@ class _HomePageState extends State<HomePage> {
       //CREATE
       await FirebaseFirestore.instance
           .collection("/transacations")
-          .add({"type": "expense"});
+          .doc("asd")
+          .set({"type": "expense"});
 
       //UPDATE
       await FirebaseFirestore.instance
