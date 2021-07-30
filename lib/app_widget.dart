@@ -1,6 +1,7 @@
-import 'package:firebase/main.dart';
 import 'package:firebase/modules/home/home_page.dart';
 import 'package:firebase/modules/login/login_page.dart';
+import 'package:firebase/modules/splash/splash_page.dart';
+import 'package:firebase/shared/auth/auth_controller.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
@@ -8,11 +9,17 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      navigatorKey: AuthController.instance.navigatorKey,
+      title: 'Flutterlistener Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginPage(),
+      initialRoute: "/splash",
+      routes: {
+        "/splash": (_) => SplashPage(),
+        "/login": (_) => LoginPage(),
+        "/home": (_) => HomePage()
+      },
     );
   }
 }

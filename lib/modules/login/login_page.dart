@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase/shared/auth/auth_controller.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,7 @@ class _LoginPageState extends State<LoginPage> {
       final response = await FirebaseAuth.instance.signInWithEmailAndPassword(
           email: "test@test.com", password: "123456");
       user = response.user;
+      AuthController.instance.loginUser(user!);
       print(user);
     } catch (e) {
       print(e);
